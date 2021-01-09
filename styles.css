@@ -1,0 +1,25 @@
+#google-logo {
+    text-align: center;
+    padding-top: 190px;
+}
+
+#google-search-bar {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+#search-bar {
+    width: 470px;
+    height: 38px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+#search-icon {
+    
+}
+
+#voice-icon {
+
+}
