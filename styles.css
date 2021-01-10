@@ -1,4 +1,4 @@
-#google-logo {
+#google-logo-container {
     text-align: center;
     padding-top: 190px;
 }
@@ -30,15 +30,4 @@
     right: 235px;
     position: absolute;
     width: 15px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-li {
-    display: inline;
-    font-family: 'Open Sans';
 }
