@@ -1,4 +1,46 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images apps-icon account-icon";
+}
+
+#about {
+    grid-area: about;
+}
+#store {
+    grid-area: store;
+}
+#gmail {
+    grid-area: gmail;
+}
+#images {
+    grid-area: images;
+}
+#apps-icon {
+    grid-area: apps-icon;
+}
+#account-icon {
+    grid-area: account-icon;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.circle-image {
+    border-radius: 50%;
+}
+
 #google-logo-container {
     text-align: center;
     padding-top: 190px;
 }
+
