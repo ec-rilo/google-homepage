@@ -2,7 +2,7 @@ html {
     height: 100%;
     min-height: 100%;
 }
-
+/* Navigation Bar styles */
 #nav-bar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -10,35 +10,51 @@ html {
     grid-template-areas: 
     "about store . gmail images apps-icon account-icon";
 }
-
+/* Navigation Bar children id styles */
 #about {
     grid-area: about;
+    justify-self: center;
+    align-self: center;
+
 }
 #store {
     grid-area: store;
+    justify-self: center;
+    align-self: center;
 }
 #gmail {
     grid-area: gmail;
+    justify-self: center;
+    align-self: center;
 }
 #images {
     grid-area: images;
+    justify-self: center;
+    align-self: center;
 }
 #apps-icon {
     grid-area: apps-icon;
+    opacity: 0.55;
+    justify-self: center;
+    align-self: center;
 }
 #account-icon {
     grid-area: account-icon;
+    justify-self: center;
+    align-self: center;
 }
-
+/* anchor tag style */
 a {
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
 }
-
+/* classes */
 .circle-image {
     border-radius: 50%;
 }
-
+/* Google Logo id style */
 #google-logo-container {
     text-align: center;
     padding-top: 190px;
