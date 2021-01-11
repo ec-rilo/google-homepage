@@ -55,8 +55,74 @@ a {
     border-radius: 50%;
 }
 /* Google Logo id style */
-#google-logo-container {
-    text-align: center;
-    padding-top: 190px;
+#main-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px;
+    grid-template-areas: 
+    ". google-logo ."
+    ". search-bar ."
+    ". button-flexbox ."
 }
 
+/* Main Content */
+#google-logo {
+    grid-area: google-logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search-bar {
+    grid-area: search-bar;
+    height: 30px;
+    align-self: center;
+}
+
+#button-flexbox {
+    display: flexbox;
+    grid-area: button-flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#search-button {
+    grid-area: search-button;
+}
+
+#random-search-button {
+    grid-area: random-search-button;
+}
+
+/*Footer styles*/
+#footer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px) 1fr repeat(3, 100px);
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business how-search-works . privacy terms settings";
+}
+
+#advertising {
+    grid-area: advertising;
+}
+
+#business {
+    grid-area: business;
+}
+
+#how-search-works {
+    grid-area: how-search-works;
+}
+
+#privacy {
+    grid-area: privacy;
+}
+
+#terms {
+    grid-area: terms;
+}
+
+#settings {
+    grid-area: settings;
+}
