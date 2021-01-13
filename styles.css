@@ -98,12 +98,16 @@ a:hover {
 #voice-icon {
     position: absolute;
     z-index: 1;
+    top: .6rem;
+    right: 1rem;
 }
 
 #search-icon {
     position: absolute;
-    opacity: 0.55;
+    opacity: 0.35;
     z-index: 1;
+    top: .6rem;
+    left: 1rem;
 }
 
 #search-bar:hover {
