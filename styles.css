@@ -68,7 +68,7 @@ a:hover {
     grid-template-rows: 200px 70px 70px;
     grid-template-areas: 
     ". google-logo ."
-    ". search-bar ."
+    ". search-bar-container ."
     ". button-flexbox ."
 }
 
@@ -78,12 +78,32 @@ a:hover {
     align-self: end;
 }
 
+#search-bar-container {
+    grid-area: search-bar-container;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
 #search-bar {
     grid-area: search-bar;
     height: 37px;
+    width: 32rem;
     align-self: center;
     border: 1px solid rgba(0, 0, 0, 0.13);
     border-radius: 25px;
+    z-index: 0;
+}
+
+#voice-icon {
+    position: absolute;
+    z-index: 1;
+}
+
+#search-icon {
+    position: absolute;
+    opacity: 0.55;
+    z-index: 1;
 }
 
 #search-bar:hover {
